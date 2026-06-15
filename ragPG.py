@@ -69,7 +69,7 @@ def processar_planilha(id_planilha, range_dados, diretorio_json):
 
 def main():
     try:
-        hangs = Hangouts(mensagem="Olá!\n*Iniciando o treinamento da isenção de ICMS!*", url="https://chat.googleapis.com/v1/spaces/AAAArlZTvjY/messages?key='SECRET_REMOVED_BY_AI'&token=ttHMivztI9WS2LDEWN-uHPddSaJhP0OUjtN942NIxZE")
+        hangs = Hangouts(mensagem="Olá!\n*Iniciando o treinamento da isenção de ICMS!*", url="REMOVED_FOR_GITHUB")
         hangs.retorna_google_chat()
         # Exemplo de como chamar a função
         id_planilha = "1rBlkAlRl0IJG0KJLAjpNsMAxw_G3YH03h8xW_Eskl6A"  # Substitua pelo ID da sua planilha
@@ -84,11 +84,11 @@ def main():
             documents=processar_planilha(id_planilha, range_dados, diretorio_json),
             pre_delete_collection=True  # O true recria a coleção de dados vetorizados
         )
-        hangs = Hangouts(mensagem="Olá!\n*Treinamento da isenção de ICMS finalizado!*", url="https://chat.googleapis.com/v1/spaces/AAAArlZTvjY/messages?key='SECRET_REMOVED_BY_AI'&token=ttHMivztI9WS2LDEWN-uHPddSaJhP0OUjtN942NIxZE")
+        hangs = Hangouts(mensagem="Olá!\n*Treinamento da isenção de ICMS finalizado!*", url="REMOVED_FOR_GITHUB")
         hangs.retorna_google_chat()
     
     except Exception as e:
-        hangs = Hangouts(mensagem=f"Olá!\n*Há erro no treinamento da isenção de ICMS!*\n\nMensagem de erro: {e}", url="https://chat.googleapis.com/v1/spaces/AAAArlZTvjY/messages?key='SECRET_REMOVED_BY_AI'&token=ttHMivztI9WS2LDEWN-uHPddSaJhP0OUjtN942NIxZE")
+        hangs = Hangouts(mensagem=f"Olá!\n*Há erro no treinamento da isenção de ICMS!*\n\nMensagem de erro: {e}", url="REMOVED_FOR_GITHUB")
         hangs.retorna_google_chat()
 
 

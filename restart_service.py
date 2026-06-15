@@ -52,17 +52,17 @@ def restart_windows_service(service_name: str):
 
 def main():
     try:
-        hangs = Hangouts(mensagem="Olá!\n*Reiniciando a API do treinamento da isenção de ICMS!*", url="https://chat.googleapis.com/v1/spaces/AAAArlZTvjY/messages?key='SECRET_REMOVED_BY_AI'&token=ttHMivztI9WS2LDEWN-uHPddSaJhP0OUjtN942NIxZE")
+        hangs = Hangouts(mensagem="Olá!\n*Reiniciando a API do treinamento da isenção de ICMS!*", url="REMOVED_FOR_GITHUB")
         hangs.retorna_google_chat()
         # Nome do servico que você quer reiniciar
         service_name_to_restart = "MyIcmsApiService"
         restart_windows_service(service_name_to_restart)
         print("\nProcesso de reinicio concluido.")
-        hangs = Hangouts(mensagem="Olá!\n*API do treinamento da isenção de ICMS reiniciada!*", url="https://chat.googleapis.com/v1/spaces/AAAArlZTvjY/messages?key='SECRET_REMOVED_BY_AI'&token=ttHMivztI9WS2LDEWN-uHPddSaJhP0OUjtN942NIxZE")
+        hangs = Hangouts(mensagem="Olá!\n*API do treinamento da isenção de ICMS reiniciada!*", url="REMOVED_FOR_GITHUB")
         hangs.retorna_google_chat()
 
     except Exception as e:
-        hangs = Hangouts(mensagem=f"Olá!\n*Há erro ao reiniciar o treinamento da isenção de ICMS*\n\nMensagem de erro: {e}", url="https://chat.googleapis.com/v1/spaces/AAAArlZTvjY/messages?key='SECRET_REMOVED_BY_AI'&token=ttHMivztI9WS2LDEWN-uHPddSaJhP0OUjtN942NIxZE")
+        hangs = Hangouts(mensagem=f"Olá!\n*Há erro ao reiniciar o treinamento da isenção de ICMS*\n\nMensagem de erro: {e}", url="REMOVED_FOR_GITHUB")
         hangs.retorna_google_chat()
 
 

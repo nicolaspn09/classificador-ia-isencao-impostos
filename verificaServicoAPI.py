@@ -12,15 +12,15 @@ def verificar_servico(nome_servico):
     if resultado.returncode == 0:
         if "RUNNING" in resultado.stdout:
             print(f"O serviço {nome_servico} está em execução. Parando o serviço...")
-            hangs = Hangouts(mensagem=f"O serviço {nome_servico} está em execução. Parando o serviço...", url="https://chat.googleapis.com/v1/spaces/AAAAG2VLaCI/messages?key='SECRET_REMOVED_BY_AI'&token=ipYvgtYxzRGjUfPmgf8VNACVbgeZzgYoRFcZnWekSfo")
+            hangs = Hangouts(mensagem=f"O serviço {nome_servico} está em execução. Parando o serviço...", url="REMOVED_FOR_GITHUB")
             hangs.retorna_google_chat()
             parar_servico(nome_servico)
         else:
-            hangs = Hangouts(mensagem=f"O serviço {nome_servico} já está parado.", url="https://chat.googleapis.com/v1/spaces/AAAAG2VLaCI/messages?key='SECRET_REMOVED_BY_AI'&token=ipYvgtYxzRGjUfPmgf8VNACVbgeZzgYoRFcZnWekSfo")
+            hangs = Hangouts(mensagem=f"O serviço {nome_servico} já está parado.", url="REMOVED_FOR_GITHUB")
             hangs.retorna_google_chat()
             print(f"O serviço {nome_servico} já está parado.")
     else:
-        hangs = Hangouts(mensagem=f"Erro ao consultar o serviço {nome_servico}: {resultado.stderr}", url="https://chat.googleapis.com/v1/spaces/AAAAG2VLaCI/messages?key='SECRET_REMOVED_BY_AI'&token=ipYvgtYxzRGjUfPmgf8VNACVbgeZzgYoRFcZnWekSfo")
+        hangs = Hangouts(mensagem=f"Erro ao consultar o serviço {nome_servico}: {resultado.stderr}", url="REMOVED_FOR_GITHUB")
         hangs.retorna_google_chat()
         print(f"Erro ao consultar o serviço {nome_servico}: {resultado.stderr}")
 
@@ -31,7 +31,7 @@ def parar_servico(nome_servico):
     
     if resultado.returncode == 0:
         print(f"Serviço {nome_servico} parado com sucesso.")
-        hangs = Hangouts(mensagem=f"Serviço {nome_servico} parado com sucesso.", url="https://chat.googleapis.com/v1/spaces/AAAAG2VLaCI/messages?key='SECRET_REMOVED_BY_AI'&token=ipYvgtYxzRGjUfPmgf8VNACVbgeZzgYoRFcZnWekSfo")
+        hangs = Hangouts(mensagem=f"Serviço {nome_servico} parado com sucesso.", url="REMOVED_FOR_GITHUB")
         hangs.retorna_google_chat()
     else:
         print(f"Erro ao parar o serviço {nome_servico}: {resultado.stderr}")

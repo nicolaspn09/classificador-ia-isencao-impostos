@@ -4,7 +4,7 @@ import json
 
 # As credenciais da sua API de gatilho
 API_GATILHO_URL = "'http://api.empresa.com.br'.202:8000/check-icms-exemption/"
-TOKEN_DE_AUTENTICACAO = "3u2ry7935ybefrjkjth23974yr13" # Use o token exato do seu .env da API
+TOKEN_DE_AUTENTICACAO = "REMOVED_FOR_GITHUB" # Use o token exato do seu .env da API
 
 # Dados do produto que você quer processar
 product_data = {
